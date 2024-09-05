@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fomrs</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Froms in HTML</h1>
+
+    <form action="" method="post">
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" ><br><br>
+
+        <div>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="hindi" name="language" value="hindi">
+            <label for="hindi">Hindi</label>
+
+            <input type="checkbox" id="english" name="language" value="english">
+            <label for="english">English</label>
+        </div>
+
+        <div>
+            <label for="dob">Date of Birth:</label>
+            <input type="date" name="dob" id="dob">
+        </div>
+
+        <div>
+            <label for="color">Favourite Color:</label>
+            <input type="color" name="color" id="color">
+        </div>
+
+        <div>
+            <label for="nom">Number of Members:</label>
+            <select name="nom" id="nom">
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+                <option value="4">Four</option>
+            </select>
+        </div>
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" autofocus><br><br>
+
+        <label for="phone">Phone:</label>
+        <input type="tel" name="phone" id="phone"><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password"><br><br>
+
+        <label for="desc">Description:</label>
+        <textarea name="desc" id="desc" cols="30" rows="10"></textarea><br><br>
+
+        
+    </form>
+</body>
+</html>

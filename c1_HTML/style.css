@@ -1,0 +1,15 @@
+body{
+    background-color: lightcyan;
+}
+
+td{
+    border: 2px solid black;
+}
+
+p{
+    background-color: lightcoral;
+}
+
+a{
+    background-color: lightgreen;
+}
