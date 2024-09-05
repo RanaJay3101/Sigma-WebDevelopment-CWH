@@ -1,0 +1,9 @@
+Sigma WebDevelopment course
+
+1. Installation of VS code 
+
+Client <--> Browser <--> Server
+
+HTML -> body
+CSS -> Beauty / styling
+JavaScript -> Client Side Scripting
