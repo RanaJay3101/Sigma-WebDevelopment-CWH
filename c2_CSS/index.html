@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS tutorail</title>
+
+    <link rel="stylesheet" href="style.css"> <!-- this is external css -->
+
+    <style>
+        /* this is internal css */
+        /* div {
+            color: red !important;
+        } */
+
+        /* here div is "selector" and color: red is "declaration" */
+
+        .internal-css {
+            color: blue;
+        }
+
+        /* h2 {
+            color: purple;
+        } */
+
+        /* div {
+            color: red;
+        } */
+        #id1{
+            color: yellow;
+        }
+        .class1{
+            color: green;
+        }
+
+        li > a{
+            background-color: yellow;
+        }
+
+        a:hover{
+            color: red;
+        }
+
+        a:active{
+            background-color: red;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>
+        CSS tutorial
+    </h1>
+
+    <!-- <div>
+        This is red 
+    </div> -->
+
+    <div>
+        <p>Three way to insert CSS</p>
+        <ol>
+            <li>Inline css
+                <p style="color: red;">This is red</p>
+            </li>
+            <li>Internal css
+                <p class="internal-css">This is blue</p>
+            </li>
+            <li>External css
+                <p class="external-css">This is green</p>
+            </li>
+        </ol>
+
+        <p>External css is best way to insert css</p>
+
+        <p>Priority of types of CSS
+
+            <ol>
+                <li> !important
+                </li>
+                <li>Inline css</li>
+                <li>Internal css</li>
+                <li>External css</li>
+
+                
+            </ol>
+
+        </p>
+    </div>
+
+    <div>
+        <h3>selector</h3>
+
+        <ol>
+            <li><div>
+                Element selector<div>
+
+            </li>
+            <li><div id="id1">
+                Id selector<div>
+
+            </li>
+            <li><div class="class1">
+                Class selector<div>
+
+            </li>
+            <li>
+                Child selector
+                <a href="index.html">Index</a>
+            </li>
+            <li>
+                Universal selector
+            </li>
+            <li>
+                Pseudo selector
+                <a href="Rj.html">Hover here</a>
+            </li>
+        </ol>
+    </div>
+
+    <div>
+        <a href="boxmodel.html">Box Model</a>
+    </div>
+
+    <div>
+        <a href="fonts.html">Font color text</a>
+    </div>
+
+    <div>
+        <a href="challange2.html">challange2</a>
+    </div>
+
+
+</body>
+</html>
