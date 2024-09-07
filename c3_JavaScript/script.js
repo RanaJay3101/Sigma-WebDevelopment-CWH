@@ -69,4 +69,18 @@ code
 }while(condition);
 
 
+function
+
+function printRJ(){
+    console.log("RJ");
+}
+
+--->>> Arrow function
+
+const fun1 = (x)=>{
+        console.log("Hi this is arrow function",x);
+    }
+
+fun1(3);
+
 */
