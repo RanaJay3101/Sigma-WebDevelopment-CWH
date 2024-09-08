@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .card {
+            display: flex;
+            border: 2px solid black;
+            width: 900px;
+            /* justify-content: center; */
+            align-items: center;
+            margin: 10px;
+        }
+
+
+
+        .image img {
+            width: 200px;
+            padding: 1px 0;
+            display: flex;
+            padding: 1px 0;
+        }
+
+        .image{
+            position: relative;
+        }
+
+        .text h1,
+        p {
+            margin: 10px;
+        }
+
+        .capsule{
+            position: absolute;
+            bottom: 4px;
+            right :5px;
+            z-index: 10;
+            background-color: black;
+            color: white;
+            opacity: 0.6;
+            padding: 3px;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="image">
+                <img src="https://i.ytimg.com/vi/9JaDBYPmiJ0/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLD2F1t93-iBW0-yJJptKjyJhXXFhA"
+                    alt="this is image">
+
+                <div class="capsule">23.47</div>
+            </div>
+
+            <div class="text">
+                <h1>
+                    Lorem ipsum dolor sit amet.
+                </h1>
+                <p>Channel name . 1234 views . 2 months ago </p>
+                <p></p>
+            </div>
+        </div>
+    </div>
+    <script src="exercise13.js"></script>
+</body>
+
+</html>
