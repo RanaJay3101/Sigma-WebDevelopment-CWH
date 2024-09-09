@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            background-color: lightgray;
+        }
+
+        header {
+            background-color: antiquewhite;
+        }
+
+        .container {
+            border: 2px solid black;
+            display: grid;
+            /* height: 100vh; */
+            /* grid layout */
+            /* grid-template-columns: 120px 100px; 2 columns */
+
+            grid-template-areas: "nav nav nav"
+            "side article srticle"
+            "side article srticle"
+            "footer footer footer";
+        }
+
+        .item {
+            /* height: 55px; */
+            /* width: 55px; */
+            
+            border: 2px solid red;
+            text-align: center;
+            line-height: 55px;
+        }
+
+        .item-1 {
+            height: 100px;
+            grid-area: nav;
+        }
+
+        .item-2{
+            grid-area: side;
+        }
+        .item-5{
+            grid-area: footer;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div><a href="index.html">Home</a></div>
+        <h1>Grid</h1>
+        <hr>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="item item-1">1</div>
+            <div class="item item-2">2</div>
+            <div class="item">3</div>
+            <div class="item item-5">4</div>
+            <div class="item item-3">5</div>
+        </div>
+    </main>
+</body>
+
+</html>
