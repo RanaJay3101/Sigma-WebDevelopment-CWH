@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .child{
+            background-color: seashell;
+            padding: 10px;
+            border: 2px solid black;
+        }
+
+        .childContainer{
+            background-color: lightcoral;
+            padding: 10px;
+            border: 2px solid black;
+        }
+
+        .container{
+            background-color: lightblue;
+            padding: 10px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Event Bubbler</h1>
+
+    <div class="container">
+        <div class="childContainer">
+            <div class="child">
+                I am child 
+            </div>
+        </div>
+    </div>
+
+    <div class="rj">
+
+    </div>
+
+    <script>
+        document.querySelector(".child").addEventListener("click",(e)=>{
+            e.stopImmediatePropagation();
+            alert("You have right clicked on child");
+        });
+
+        document.querySelector(".childContainer").addEventListener("click",(e)=>{
+            
+            alert("You have right clicked on childContainer");
+        });
+
+        document.querySelector(".container").addEventListener("click",()=>{
+            alert("You have right clicked on Container");
+        });
+
+        colors = ["red","blue","green","yellow","orange","purple","pink"];
+
+        // setInterval(()=>{
+        //     document.querySelector(".container").style.backgroundColor = colors[Math.floor(Math.random()*colors.length)];
+        // },1000);
+
+        
+        let count = 0;
+        // setInterval(()=>{
+        //     count++;
+        //     document.querySelector(".rj").innerHTML = `<h1> Time : ${count}sec</h1>`;
+        // },1000);
+
+        setTimeout(()=>{
+            ++count;
+            document.querySelector(".rj").innerHTML = `<h1> Time : ${count}sec</h1>`;
+        },3000);
+
+
+    </script>
+</body>
+</html>
