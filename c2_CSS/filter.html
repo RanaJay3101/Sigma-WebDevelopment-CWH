@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            text-align: center;
+            border: black 2px solid;
+            filter: blur(10px);
+            transition: 1s;
+            border-radius: 50%;
+        }
+
+        .box:hover{
+            filter: none;
+            border-radius: 0%;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <a href="index.html">Home</a>
+
+        <div class="container">
+            <div class="box">
+                <h2>Box 1</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

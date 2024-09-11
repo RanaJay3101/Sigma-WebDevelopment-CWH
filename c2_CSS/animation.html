@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container{
+            width: 97vw;
+            height: 80vh;
+            border: 2px solid red;
+
+             position: relative;
+        }
+
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            border: 2px solid black;
+            /* animation: jayAnimation 2s ease-in-out 3s infinite alternate, jay2 2s ease-in-out 3s 1; */
+            border-radius: 50%;
+
+            position: absolute;
+            bottom: 0%;
+
+            /* animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-delay: 1s;
+            animation-direction: alternate; */
+
+            animation: anX 3s linear 1s infinite alternate,
+                        anY 1s ease-out 1s infinite alternate; 
+                         
+        }
+
+        @keyframes anX {
+            from{
+                left: 0%;
+            }
+            to{
+                left: 100%;
+            }
+        }
+
+        @keyframes anY {
+            from{
+                bottom: 0%;
+            }
+            to{
+                bottom: 100%;
+            }
+        }
+
+        @keyframes jayAnimation {
+            from{
+                transform: scale(1);
+                background-color: red;
+            }
+            to{
+                transform: scale(2);
+                background-color: green;
+            }
+        }
+
+        @keyframes jay2 {
+            0%{
+
+            }
+            10%{
+                transform: rotate(30deg);
+            }
+            20%{
+                transform: rotate(60deg);
+            }
+            30%{
+                transform: rotate(90deg);
+            }
+            40%{
+                transform: rotate(120deg);
+            }
+            50%{
+                transform: rotate(150deg);
+            }
+            60%{
+                transform: rotate(180deg);
+            }
+            70%{
+                transform: rotate(210deg);
+            }
+            80%{
+                transform: rotate(240deg);
+            }
+            90%{
+                transform: rotate(270deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+
+
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <a href="index.html">
+            Home
+        </a>
+    </div>
+
+    <h1>Animation</h1>
+
+    <hr>
+
+    <div class="container">
+        <div class="box">
+
+        </div>
+    </div>
+</body>
+</html>
