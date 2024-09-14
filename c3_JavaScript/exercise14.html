@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        /* body{
+            background-color: black;
+            color: rgb(65, 239, 65);
+        } */
+
+    </style>
+</head>
+<body>
+    <!--
+    <h1>Hacking Simulations</h1>
+
+    <div class="rj">
+
+    </div>
+
+    
+
+    <script>
+
+const randomDelay = () => {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve();
+        }, Math.floor(1+Math.random() * 4000));
+    });
+};
+
+let text = [
+    "Initializing Hacking....",
+    "Password files detected...",
+    "Hacking into the mainframe...",
+    "Uploading virus...",
+    "Hacking complete...",
+]
+
+async function main(){
+    let e = setInterval(()=>{
+        let last = document.body.lastElementChild;
+        if(last.innerHTML.endsWith("...")){
+            last.innerHTML=last.innerHTML.slice(0,last.innerHTML.length-3);
+        }
+        else{
+            last.innerHTML+=".";
+        }
+    },100);
+    
+const addItem = async (item) => {
+    
+    await randomDelay();
+    let div = document.createElement("div");
+    div.innerHTML = item;
+    document.body.append(div);
+}
+
+for(const item of text){
+    
+
+    await addItem(item);
+}
+
+clearInterval(e);
+
+}
+
+main();
+
+
+   
+</script> -->
+
+<script src="advanceJs.js"></script>
+
+</body>
+</html>

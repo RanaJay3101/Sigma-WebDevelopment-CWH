@@ -17,3 +17,11 @@ prom1.then((name)=>{
 .finally(()=>{
     console.log("This is finally block");
 });
+
+/*Promis documents
+FreeCodecamp -> https://www.freecodecamp.org/news/what-is-promise-in-javascript-for-beginners/
+https://javascript.info/promise-basics
+
+https://medium.com/javascript-scene/master-the-javascript-interview-what-is-a-promise-27fc71e77261
+
+*/
