@@ -1,0 +1,2 @@
+1. why express ? -> 
+http is limited in terms of what it can do. Express is a framework that sits on top of http and makes it easier to build web applications. It provides a lot of functionality out of the box, such as routing, middleware, and templating engines. It also has a large ecosystem of plugins that can be used to extend its functionality even further.
