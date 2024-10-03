@@ -1,0 +1,16 @@
+-> why React
+
+- React is a JavaScript library for building user interfaces
+- React is a declarative, efficient, and flexible JavaScript library for building user interfaces
+
+
+-> JSX 
+
+- JSX is a syntax extension for JavaScript
+- JSX produces React “elements”
+- We can only return one element
+- Every tage should be closed
+- We can use JavaScript expressions inside JSX
+- we need to use className instead of class
+
+
